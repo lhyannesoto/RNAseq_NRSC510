@@ -14,7 +14,7 @@ library(tidyverse)
 #this reads in the counts table
 #row.names = 1 tells the code that the first row are just names
 
-setwd("/Users/lhyannesoto/RNAseq123")
+setwd("Users\sotol\Documents\GitHub\RNAseq_NRSC510")
 counts <- read.delim("R539_count.txt", row.names = 1)
 
 #look at first 6 rows

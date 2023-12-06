@@ -7,7 +7,7 @@ set.seed(123)
 #this reads in the counts table
 #row.names = 1 tells the code that the first row are just names
 
-setwd("/Users/lhyannesoto/NRSC510_1/RNAseq_NRSC510/RNAseq123")
+setwd("~/GitHub/RNAseq_NRSC510/RNAseq123")
 counts <- read.delim("R539_count.txt", row.names = 1)
 
 
