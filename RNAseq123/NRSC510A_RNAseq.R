@@ -14,7 +14,8 @@ library(tidyverse)
 #this reads in the counts table
 #row.names = 1 tells the code that the first row are just names
 
-setwd("/Users/lhyannesoto/RNAseq123")
+
+setwd("/Users/lhyannesoto/NRSC510_1/RNAseq_NRSC510/RNAseq123")
 counts <- read.delim("R539_count.txt", row.names = 1)
 
 #look at first 6 rows
@@ -27,6 +28,10 @@ genenames = cbind(counts$gene_name,rownames(counts))
 genenames = as.data.frame(genenames)
 #naming the columns
 colnames(genenames) = c("genesymbol","EnsemblID")
+
+head(counts)
+
+dim(d)
 
 #counts in DGEList has genes in the rows and samples in the columns
 #create a DGEList object that it can continue to work on
